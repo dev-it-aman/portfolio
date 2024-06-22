@@ -5,6 +5,8 @@ import NavBar from "./components/Navbar";
 import Technologies from "./components/Technologies";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
+import Contact1 from "./components/Contact1";
+import Education from "./components/Education";
 
 const App = () => {
   return (
@@ -21,8 +23,10 @@ const App = () => {
         <About/>
         <Technologies/>
         <Experience/>
+        <Education/>
         <Project/>
-        <Contact/>
+        <Contact1></Contact1>
+        <Contact/>/
       </div>
       
     </div>
