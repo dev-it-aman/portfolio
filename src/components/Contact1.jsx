@@ -103,7 +103,7 @@ const ContactInputMessage = styled.textarea`
   }
 `
 
-const ContactButton = styled.input`
+const ContactButton = styled.button`
   width: 100%;
   text-decoration: none;
   text-align: center;

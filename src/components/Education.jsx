@@ -9,6 +9,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { education } from '../constants';
 import EducationCard from './Cards/EducationCard';
+import { motion } from 'framer-motion';
 
 const Container = styled.div`
     display: flex;
@@ -81,12 +82,25 @@ const Education = () => {
     return (
         <Container id="education">
             <Wrapper>
-                <Title>Education</Title>
-                <Desc>
+                <motion.h1
+                whileInView={{opacity:1, y:0}}
+                initial={{opacity:0, y:-50}}
+                transition={{duration:0.5}}
+                className='mt-20 text-center text-4xl'>
+                    Education
+                </motion.h1>
+                <motion.div
+                whileInView={{opacity:1, y:0}}
+                initial={{opacity:0, y:-50}}
+                transition={{duration:0.5}}
+                className="text-lg text-center max-w-[600px] text-text_secondary md:mt-3 md:text-base">
                     My education has been a journey of self-discovery and growth. My educational details are as follows.
-                </Desc>
+                </motion.div>
                 <TimelineSection>
-                    <Timeline>
+                    <motion.Timeline
+                    whileInView={{opacity:1, x:0}}
+                    initial={{opacity:0, x:100}}
+                    transition={{duration:1}}>
                         {education.map((education,index) => (
                             <TimelineItem >
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
@@ -98,7 +112,7 @@ const Education = () => {
                                 </TimelineSeparator>
                             </TimelineItem>
                         ))}
-                    </Timeline>
+                    </motion.Timeline>
 
                 </TimelineSection>
             </Wrapper>
