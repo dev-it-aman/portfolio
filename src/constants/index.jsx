@@ -63,7 +63,7 @@ export const PROJECTS = [
         `User can create a new room, share room ID with other peers, work on
         code real time. The Editor possess syntax highlighting, indentation,
         and brace matching functionality`],
-    technologies: ["CSS", "React", "Node.js","Express", "CodeMirror"],
+    technologies: ["React", "Node.js","Express", "CodeMirror"],
   },
   {
     title: "WE-meet",
@@ -73,7 +73,7 @@ export const PROJECTS = [
       Recording, Sending Email Invitations, and User Authentication.`,
       `Application could handle 10 participants in single meeting with very
       low latency`],
-    technologies: ["Ejs", "Node.js","Express", "Peerjs", "Socket.io","Passport.js"],
+    technologies: ["Ejs", "Express", "Peerjs", "Socket.io","Passport.js"],
   },
   {
     title: "Portfolio Website",
