@@ -1,2 +1,6 @@
 [build]
-command = " npm install --legacy-peer-deps "
+  command = "npm install --legacy-peer-deps && npm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "18" # Ensure this matches your project requirements
