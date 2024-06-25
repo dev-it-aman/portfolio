@@ -18,6 +18,7 @@ export const ABOUT_TEXT = `👨‍💼 I'm a passionate programmer 2023 grad fro
 export const EXPERIENCES = [
   {
     year: "June, 2023 - Present",
+    image:"https://www.fplabs.tech/Assets_FPL/FPL_Logo.svg",
     role: "Full-Stack Developer",
     company: "FPL Technologies (OneCard), Pune",
     description: [
@@ -38,6 +39,7 @@ export const EXPERIENCES = [
   },
   {
     year: "May, 2022 - July, 2022",
+    image:"https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31",
     role: "Software Engineering Intern",
     company: "Microsoft Incorporation, Hyderabad",
     description: [

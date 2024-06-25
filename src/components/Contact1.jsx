@@ -130,7 +130,7 @@ const Contact1 = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_424xzvt', 'template_nbhiuxs', form.current, 'SybVGsYS52j2TfLbi')
+    emailjs.sendForm('service_424xzvt', 'template_nbhiuxs', form.current, 's2TbPAHrguA68ORwU')
       .then((result) => {
         setOpen(true);
         form.current.reset();
@@ -152,7 +152,7 @@ const Contact1 = () => {
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
+          <ContactButton type="submit" value="Send">Send</ContactButton>
         </ContactForm>
         <Snackbar
           open={open}

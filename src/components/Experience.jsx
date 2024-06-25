@@ -22,6 +22,7 @@ const Experience = () => {
                         transition={{duration:1}}
                         className='w-full lg:w-1/4'>
                             <p className='mb-2 text-sm text-neutral-400'>{Experience.year}</p>
+                            <img src={Experience.image} alt="experienceImage"/>
                         </motion.div>
                         <motion.div
                         whileInView={{opacity:1, x:0}}
