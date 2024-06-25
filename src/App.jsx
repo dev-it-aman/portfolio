@@ -26,7 +26,7 @@ const App = () => {
         <Education/>
         <Project/>
         <Contact1></Contact1>
-        <Contact/>/
+        <Contact/>
       </div>
       
     </div>
