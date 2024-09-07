@@ -22,20 +22,23 @@ export const EXPERIENCES = [
     role: "Full-Stack Developer",
     company: "FPL Technologies (OneCard), Pune",
     description: [
-      `Designed and implemented Core-Simulator, web application end-to-end to
-       simulate the significant processes happening in credit card lifecycle for
-       bank-auditing & features testing reducing operation costs and go-live time
-       of new features, based on JAVA-backend & Reactjs-frontend deployed on
-       Docker.`,
+      `Engineered Universal Transaction Posting Service for all the non-network
+       involved transactions catering to One Card CMS and LMS transactions,
+      reducing code duplication by 40% and enhancing project repository
+       cleanliness, maintainability and developer efficiency.`,
+      `Developed and launched Core-Simulator, a comprehensive web application
+      using JAVA backend and ReactJS frontend, deployed on Docker,reducing
+      operational costs by 25% and cutting go-live time for new features by 40%.`,
+       `Designed & implemented RestApi that mocks transaction posting scenario
+       over VISA-network using ISO-8583 format allowing better Transaction Authorization
+       Services testing.`,
       `Implemented the Transaction Reversal Service for transaction reversals
        allowing credit card balance zeroization, reversals of past false credits
        bringing in INR 5 cr+ money in just 1 week of release.`,
-      `Designed & implemented RestApi that mocks transaction posting scenario
-       over VISA-network using ISO-8583 format allowing better Services testing.`,
       `Introduced the parsing and handling of VISA-settlement SMSData records
        reducing operational costs and customer follow-ups during OCT failures.`
     ],
-    technologies: ["Java", "React.js", "Postgresql", "Hibernate", "Docker"],
+    technologies: ["Java","JPoS", "React.js", "Postgresql", "Hibernate", "Docker"],
   },
   {
     year: "May, 2022 - July, 2022",
