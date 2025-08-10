@@ -1,6 +1,7 @@
 import project1 from "../assets/projects/Codepair.jpeg";
 import project2 from "../assets/projects/wemeet.png";
 import project3 from "../assets/projects/portfolio.jpeg";
+import onecardLogo from "../assets/onecard.png";
 
 export const Roles = [
   "Full Stack Developer",
@@ -9,16 +10,52 @@ export const Roles = [
   "Competitive Programmer"
 ];
 
-export const resume = "https://drive.google.com/file/d/1sfOysNfO9s8KhMLvSra-TaBgKMuRVPHk/view";
+export const resume = "https://drive.google.com/file/d/1zP8pbqNTO95xJzYEjluJL3KBj9-m1M0S/view?usp=sharing";
 
-export const HERO_CONTENT = `👋 Hi there! I'm a passionate Full-Stack Developer at FPL Technologies (OneCard) in Pune. Since June 2023, I've been enhancing credit card processes with web apps like the Core-Simulator. My expertise includes Java, React.js, PostgreSQL, Hibernate, and Docker. Previously, I interned at Microsoft, improving the Android OneNote app with real-time collaboration features. I love tackling challenges and building efficient, scalable solutions. 🚀💻✨`;
+export const HERO_CONTENT = (
+    <>
+      💻 SDE 2 at Dream11 | Architecting and optimizing distributed offer platforms with Java, Vert.x, Kafka, DynamoDB, and AWS — powering 20M+ RPM at sub-10 ms latency.
+      <br />
+      🚀 Ex-OneCard & Microsoft | Expert in system design, performance tuning, and Data Structures & Algorithms (Knight on LeetCode).
+    </>
+);
 
-export const ABOUT_TEXT = `👨‍💼 I'm a passionate programmer 2023 grad from IIT BHU having 1+ years of Experience with a keen interest in Data Structures and Algorithms, always striving for excellence and proactively seeking self-improvement. I enjoy tackling complex challenges and contributing to innovative solutions. Currently, I'm a key member of OneCard's core systems team, specializing in fintech solutions for the credit card industry. Previously, I interned at Microsoft's Android OneNote team, where I successfully delivered projects despite having limited prior experience in Android development. My technical skills include proficiency in Java, React.js, Hibernate, PostgreSQL, JPoS, and Docker, with a strong background in full-stack development using ReactJs, NodeJs, and Java. I am also adaptable to new technologies and a rapid learner. My problem-solving achievements include being a Knight on LeetCode with a top rating of 2056, and a 4-star coder on Codechef with a highest rating of 1940, demonstrating my expertise in competitive programming. 🔍💻💡`;
+export const ABOUT_TEXT = (
+    <>
+      👨‍💼 I’m a 2023 IIT BHU graduate with ~2 years of experience building scalable, high-performance systems.
+      <br /><br />
+      Currently an SDE 2 at Dream11, I design, own, and optimize a distributed offers platform handling 20M+ RPM with sub-10 ms latency using Java, Vert.x, Kafka, DynamoDB, and AWS.
+      <br /><br />
+      Previously at OneCard, I built fintech solutions including the Core-Simulator and transaction frameworks using Java, React.js, Hibernate, PostgreSQL, JPoS, and Docker — reducing costs and accelerating feature releases. Earlier, at Microsoft, I contributed to the Android OneNote team, adding real-time collaboration features.
+      <br /><br />
+      Passionate about Data Structures & Algorithms, I’ve achieved Knight on LeetCode (rating 2056) and 4⭐ on CodeChef (rating 1940). I thrive on solving complex challenges, learning fast, and delivering impactful solutions. 🔍💻💡
+    </>
+);
 
 export const EXPERIENCES = [
   {
-    year: "June, 2023 - Present",
-    image:"https://www.fplabs.tech/Assets_FPL/FPL_Logo.svg",
+    year: "September, 2024 - Present",
+    image:"https://d13ir53smqqeyp.cloudfront.net/d11-static-pages/images/dream11LogoWhite.webp",
+    role: "Software Development Engineer 2",
+    company: "Dream11, Mumbai",
+    description: [
+      `Core contributor to a multi-tenant Offers Platform using Vert.x,
+       DynamoDB, and Kafka, enabling plug-and-play integration for 3+ product
+       teams via offer logic abstraction.`,
+      `Own the Fetch User Offers API (peak 6.5M RPM, p95 6ms, p99 12ms)
+       end-to-end — from design to implementation and performance tuning.`,
+      `Collaborated on HLD/LLD, service boundaries, and schema design with a
+       senior engineer, ensuring efficient queries and low latency at scale.`,
+      `Led service optimization via Gatling-based load testing (Torque), from
+       single-instance benchmarks to 35M RPM simulating real-time match flow.`,
+      `Reduced product go-live effort from 60 man-days to 15 man-days, saving
+       engineering bandwidth and accelerating delivery cycles.`
+    ],
+    technologies: ["Java","Vert.x", "DynamoDB", "Kafka", "Aerospike", "Node.js", "AWS"],
+  },
+  {
+    year: "June, 2023 - September, 2024",
+    image: onecardLogo,
     role: "Full-Stack Developer",
     company: "FPL Technologies (OneCard), Pune",
     description: [
@@ -90,7 +127,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "5, Shailesh Tower, Aundh, Pune 411007, INDIA",
+  address: "M-1402, Godrej Central L-R Tower, Shell Colony, Chembur, Mumbai 400071, INDIA",
   phoneNo: "+91 9057236386 ",
   email: "amanraizada01@gmail.com",
 };

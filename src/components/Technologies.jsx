@@ -5,6 +5,10 @@ import { RiJavaLine } from 'react-icons/ri';
 import { TbBrandJavascript } from 'react-icons/tb';
 import { TbBrandCpp } from "react-icons/tb";
 
+import { SiAmazondynamodb } from "react-icons/si";
+import { SiAerospike } from "react-icons/si";
+import { SiApachekafka } from "react-icons/si";
+
 import { RiReactjsLine } from 'react-icons/ri';
 import { FaNodeJs } from 'react-icons/fa';
 import { SiHibernate } from "react-icons/si";
@@ -18,6 +22,7 @@ import { PiGitlabLogo } from "react-icons/pi";
 import { DiDocker } from "react-icons/di";
 import { SiSwagger } from "react-icons/si";
 import { TbBrandRedux } from "react-icons/tb";
+import { FaAws } from "react-icons/fa";
 
 
 import { motion } from "framer-motion";
@@ -81,6 +86,13 @@ const Technologies = () => {
                 initial={{opacity:0, x:-100}}
                 transition={{duration:1.5}}
                 className='flex flex-wrap items-center justify-center gap-4'>
+                    <motion.div
+                        variants={iconVariants(2)}
+                        initial="initial"
+                        animate="animate"
+                        className='rounded-2xl border-4 border-neutral-800 p-4'>
+                        <SiApachekafka className='text-7xl text-yellow-400'/>
+                    </motion.div>
                     <motion.div 
                     variants={iconVariants(2)}
                     initial="initial"
@@ -117,6 +129,20 @@ const Technologies = () => {
                 initial={{opacity:0, x:-100}}
                 transition={{duration:1.5}}
                 className='flex flex-wrap items-center justify-center gap-4'>
+                    <motion.div
+                        variants={iconVariants(2.5)}
+                        initial="initial"
+                        animate="animate"
+                        className='rounded-2xl border-4 border-neutral-800 p-4'>
+                        <SiAerospike className='text-7xl text-white-700'/>
+                    </motion.div>
+                    <motion.div
+                        variants={iconVariants(2.5)}
+                        initial="initial"
+                        animate="animate"
+                        className='rounded-2xl border-4 border-neutral-800 p-4'>
+                        <SiAmazondynamodb className='text-7xl text-red-700'/>
+                    </motion.div>
                     <motion.div 
                     variants={iconVariants(2.5)}
                     initial="initial"
@@ -138,13 +164,6 @@ const Technologies = () => {
                     className='rounded-2xl border-4 border-neutral-800 p-4'>
                         <BiLogoMongodb className='text-7xl text-red-700'/> 
                     </motion.div>
-                    <motion.div 
-                    variants={iconVariants(3)}
-                    initial="initial"
-                    animate="animate"
-                    className='rounded-2xl border-4 border-neutral-800 p-4'>
-                        <FaGithub className='text-7xl text-green-500'/> 
-                    </motion.div>
                 </motion.div>
             </div>
             <div>
@@ -153,12 +172,12 @@ const Technologies = () => {
                 initial={{opacity:0, x:-100}}
                 transition={{duration:1.5}}
                 className='flex flex-wrap items-center justify-center gap-4'>
-                    <motion.div 
-                    variants={iconVariants(2.5)}
-                    initial="initial"
-                    animate="animate"
-                    className='rounded-2xl border-4 border-neutral-800 p-4'>
-                        <PiGitlabLogo className='text-7xl text-sky-700'/> 
+                    <motion.div
+                        variants={iconVariants(3)}
+                        initial="initial"
+                        animate="animate"
+                        className='rounded-2xl border-4 border-neutral-800 p-4'>
+                        <FaGithub className='text-7xl text-green-500'/>
                     </motion.div>
                     <motion.div 
                     variants={iconVariants(4)}
@@ -173,6 +192,13 @@ const Technologies = () => {
                     animate="animate"
                     className='rounded-2xl border-4 border-neutral-800 p-4'>
                         <TbBrandRedux className='text-7xl text-green-500'/> 
+                    </motion.div>
+                    <motion.div
+                        variants={iconVariants(3)}
+                        initial="initial"
+                        animate="animate"
+                        className='rounded-2xl border-4 border-neutral-800 p-4'>
+                        <FaAws className='text-7xl text-yellow-500'/>
                     </motion.div>
                 </motion.div>
             </div>
